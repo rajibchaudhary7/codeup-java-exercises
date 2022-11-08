@@ -23,10 +23,16 @@ public class HelloWorld {
 //        System.out.println(myNumber);
 //        Error appears: variable myNumber might not have been initialized
 
-        long myNumber = 3.14;
-        System.out.println(myNumber);
+//        long myNumber = 3.14;
+//        System.out.println(myNumber);
 //        Error appears: incompatible types: possible lossy conversion from
 //        double to long
+
+        long myNumber = 123L;
+        System.out.println(myNumber);
+
+        long myNumber = 123;
+
 
 
 
