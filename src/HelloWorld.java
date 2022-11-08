@@ -19,12 +19,14 @@ public class HelloWorld {
 //        myString = 3.14159;
 //        my string will only accept a string value not number
 
-        long myNumber;
-        System.out.println(myNumber);
+//        long myNumber;
+//        System.out.println(myNumber);
 //        Error appears: variable myNumber might not have been initialized
 
-//        long myNumber = 3.14;
-//        System.out.println(myNumber);
+        long myNumber = 3.14;
+        System.out.println(myNumber);
+//        Error appears: incompatible types: possible lossy conversion from
+//        double to long
 
 
 
