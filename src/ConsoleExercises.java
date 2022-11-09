@@ -7,28 +7,28 @@ public class ConsoleExercises {
 
         Scanner scanner = new Scanner(System.in);
 
-//        System.out.print("Enter your favorite number: ");
-//        int userInput = scanner.nextInt();
-//        System.out.println("You entered: \"" + userInput + "\"");
-//
-//        System.out.println("Enter you three favorite cities: ");
-//        String userInput1 = scanner.next();
-//        String userInput2 = scanner.next();
-//        String userInput3 = scanner.next();
-//        System.out.println("You entered: " + "\n" + userInput1 + "\n" + userInput2 + "\n" + userInput3 + "\n");
-//
-//        scanner.nextLine();
-//        System.out.println("Enter a sentence: ");
-//        String userSentence = scanner.next();
-////        System.out.println("Sentence you entered is: " + userSentence);
-//
-//        scanner.nextLine();
-//        System.out.println("Enter a sentence: ");
-//        String userSentence1 = scanner.nextLine();
-//        System.out.println("Sentence you entered is: " + userSentence1);
-//
-////🐰 Calculate the perimeter and area of Codeup's classrooms
-//        scanner.nextLine();
+        System.out.print("Enter your favorite number: ");
+        int userInput = scanner.nextInt();
+        System.out.println("You entered: \"" + userInput + "\"");
+
+        System.out.println("Enter you three favorite cities: ");
+        String userInput1 = scanner.next();
+        String userInput2 = scanner.next();
+        String userInput3 = scanner.next();
+        System.out.println("You entered: " + "\n" + userInput1 + "\n" + userInput2 + "\n" + userInput3 + "\n");
+
+        scanner.nextLine();
+        System.out.println("Enter a sentence: ");
+        String userSentence = scanner.next();
+        System.out.println("Sentence you entered is: " + userSentence);
+
+        scanner.nextLine();
+        System.out.println("Enter a sentence: ");
+        String userSentence1 = scanner.nextLine();
+        System.out.println("Sentence you entered is: " + userSentence1);
+
+//🐰 Calculate the perimeter and area of Codeup's classrooms
+        scanner.nextLine();
         System.out.println("Enter length of your classroom: ");
         String a = scanner.nextLine();
         System.out.println("Enter width of your classroom: ");
