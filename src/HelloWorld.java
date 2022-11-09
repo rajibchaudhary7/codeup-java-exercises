@@ -41,18 +41,43 @@ public class HelloWorld {
 //        int x = 5;
 //        System.out.println(x++);
 //        System.out.println(x);
+//
+//        int x = 5;
+//        System.out.println(++x);
+//        System.out.println(x);
 
-        int x = 5;
-        System.out.println(++x);
-        System.out.println(x);
-
-        class = "Myclass";
-        System.out.println(class);
+//        class = "Myclass";
+//        System.out.println(class);
 //        Error message : illegal start of expression
 
         String theNumberThree = "three";
         Object o = theNumberThree;
         int three = (int) o;
+//        Error: Exception in thread "main" java.lang.ClassCastException: class java.lang.String
+//        cannot be cast to class java.lang.Integer (java.lang.String and java.lang.Integer are in module java.base of loader 'bootstrap')
+//	at HelloWorld.main(HelloWorld.java:55)
+
+
+//        int three = (int) "three";
+//        Error: java.lang.String cannot be converted to int
+
+
+//🐰   Rewrite the following expressions using the relevant shorthand assignment operators:
+        int x = 4;
+        x = x + 5;
+//        int x += 5;
+
+
+
+//        int x = 3;
+//        int y = 4;
+//        y = y * x;
+//
+//        int x = 10;
+//        int y = 2;
+//        x = x / y;
+//        y = y - x;
+
 
 
 
