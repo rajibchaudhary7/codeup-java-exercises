@@ -19,7 +19,7 @@ public class HelloWorld {
 //        myString = 3.14159;
 //        my string will only accept a string value not number
 
-//        long myNumber;
+        long myNumber;
 //        System.out.println(myNumber);
 //        Error appears: variable myNumber might not have been initialized
 
@@ -38,13 +38,13 @@ public class HelloWorld {
 //        System.out.println(myNumber);
 //        Error : incompatible types: possible lossy conversion from double to float
 
+        int x = 5;
+        System.out.println(x++);
+        System.out.println(x);
+
 //        int x = 5;
-//        System.out.println(x++);
-//        System.out.println(x);
-//
-//        int x = 5;
-//        System.out.println(++x);
-//        System.out.println(x);
+        System.out.println(++x);
+        System.out.println(x);
 
 //        class = "Myclass";
 //        System.out.println(class);
@@ -63,20 +63,30 @@ public class HelloWorld {
 
 
 //🐰   Rewrite the following expressions using the relevant shorthand assignment operators:
-        int x = 4;
-        x = x + 5;
-//        int x += 5;
-
-
-
+//        int x = 4;
+//        x = x + 5;
+//        x += 5;
+//
 //        int x = 3;
 //        int y = 4;
 //        y = y * x;
+//        y += x;
 //
 //        int x = 10;
 //        int y = 2;
 //        x = x / y;
 //        y = y - x;
+//        x /= y;
+//        y -= x;
+
+//        What happens if you assign a value to a numerical variable that is larger (or smaller) than the type can hold?
+//        What happens if you increment a numeric variable past the type's capacity?
+
+//        Hint: Integer.MAX_VALUE is a class constant (we'll learn more about these later) that holds the maximum value
+//        for the int type.
+
+
+
 
 
 
