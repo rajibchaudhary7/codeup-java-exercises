@@ -31,8 +31,30 @@ public class HelloWorld {
 //        long myNumber = 123L;
 //        System.out.println(myNumber);
 
-        long myNumber = 123;
-        System.out.println(myNumber);
+//        long myNumber = 123;
+//        System.out.println(myNumber);
+
+//        long myNumber = 3.14;
+//        System.out.println(myNumber);
+//        Error : incompatible types: possible lossy conversion from double to float
+
+//        int x = 5;
+//        System.out.println(x++);
+//        System.out.println(x);
+
+        int x = 5;
+        System.out.println(++x);
+        System.out.println(x);
+
+        class = "Myclass";
+        System.out.println(class);
+//        Error message : illegal start of expression
+
+        String theNumberThree = "three";
+        Object o = theNumberThree;
+        int three = (int) o;
+
+
 
 
 
