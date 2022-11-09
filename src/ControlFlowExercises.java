@@ -35,8 +35,23 @@ public class ControlFlowExercises {
 //            System.out.println(i);
 //            i = i * i;
 //        } while ( i <= 1000000);
-        for (long i = 2; i <= 1000000; i *= i) {
-        System.out.println(i);
+//        for (long i = 2; i <= 1000000; i *= i) {
+//        System.out.println(i);
+//        }
+
+
+//        🐰Fizzbuzz
+        for (int i = 1; i <= 100; i++) {
+            System.out.print(i +" ");
+            if (i % 5 == 0 && i % 3 == 0){
+                System.out.println("FizzBuzz");
+            } else if ( i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if ( i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i +" ");
+            }
         }
     }
 }
