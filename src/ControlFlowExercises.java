@@ -4,6 +4,9 @@ public class ControlFlowExercises {
 //       while (i <= 15) {
 //           System.out.print(i + " "); i++;
 //       }
+        for (int i = 5; i <= 15; i++) {
+            System.out.print(i + " ");
+        }
 
 
 //       int i = 0;
@@ -19,10 +22,10 @@ public class ControlFlowExercises {
 //            i -= 5;
 //        } while (i >= -10);
 
-        long i = 2;
-        do{
-            System.out.println(i * i);
-            i = i * i;
-        } while ( i <= 1000000);
+//        long i = 2;
+//        do{
+//            System.out.println(i * i);
+//            i = i * i;
+//        } while ( i <= 1000000);
     }
 }
