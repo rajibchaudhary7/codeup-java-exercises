@@ -21,11 +21,16 @@ public class ArraysExercises {
 //        Create a static method named addPerson. It should accept an array of Person objects, as well as a single
 //        person object to add to the passed array. It should return an array whose length is 1 greater than the
 //        passed array, with the passed person object at the end of the array.
-        System.out.println(Arrays.toString(addPerson(Person, Isaiah)));
+
+                for (Person p: addPerson(Person, Isaiah)){
+                    System.out.print(p.getName() + " ");
+
+        }
+//                     Arrays.toString(addPerson(Person, Isaiah)));
     }
     public static Person[] addPerson(Person[] x, Person name){
-        Person[] copyArray = Arrays.copyOf(x, 4);
-        copyArray[3] = name;
+        Person[] copyArray = Arrays.copyOf(x, x.length + 1);
+        copyArray[copyArray.length-1] = name;
         return copyArray;
     };
 }

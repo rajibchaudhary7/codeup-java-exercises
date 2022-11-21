@@ -40,14 +40,13 @@ public class MethodsExercises {
 //        The method signature should look like this:
     public static int getInteger(int min, int max) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter an integer: ");
+        System.out.print("Enter an integer between " + min + " and " + max + ": ");
         int input = s.nextInt();
         if (input > max || input < min) {
             System.out.println("This is an invalid entry!");
             return getInteger(min, max);
         }
-        System.out.printf("You entered %s!", input);
-        return input;
+            return input;
     }
 
     ;
@@ -65,10 +64,10 @@ public class MethodsExercises {
 //    Factorials are denoted by the exclamation point (n!). Ex:
     public static String factorial() {
         Scanner s = new Scanner(System.in);
+        int userInput = getInteger(1, 10);
         String repeat = "y";
-        int num = getInteger(1, 10);
         String result = "";
-        for (int i = 1; i <= num; i++) {
+        for (int i = 1; i <= userInput; i++) {
             result += factorial(i);
         }
         System.out.println(result);
@@ -83,17 +82,43 @@ public class MethodsExercises {
     }
 
     public static String factorial(int a) {
-        String result = a + "!=";
+        String result = "\n" + a + "! =";
         long b = 1L;
         for (int i = 1; i <= a; i++) {
-            result += "X" + i;
+            result += " x " + i ;
             b *= i;
         }
         if (a == 10) {
-            result = result.substring(0, 5) + result.substring(8) + "="
+            result = result.substring(0, 5) + result.substring(8) + " = "
+                    + b + "\n";
+        }else{
+            result = result.substring(0, 5) + result.substring(7) + " = "
                     + b + "\n";
         }
         return result;
+    }
+
+//    Create an application that simulates dice rolling.
+//    Ask the user to enter the number of sides for a pair of dice.
+//    Prompt the user to roll the dice.
+//"Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
+//            Use static methods to implement the method(s) that generate the random numbers.
+//    Use the .random method of the java.lang.Math class to generate random numbers.
+
+    public static void diceRoll(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter the number of sides of a pair of dice: ");
+        int sides = s.nextInt();
+        System.out.println("Ready to roll the dice? Y or N: ");
+        String userChoice = s.next();
+//        If (userChoice.equalsIgnoreCase("y")){
+//            System.out.println("die 1:" + (int)Math.floor(Math.random() * sides) +1);
+//            System.out.println("die 2:" + (int)Math.floor(Math.random() * sides) +1);
+//        }
+
+
+
+
     }
 }
 
