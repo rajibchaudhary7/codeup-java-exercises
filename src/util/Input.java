@@ -29,9 +29,22 @@ public class Input {
             return getInt(min, max);
         }
     }
+//    public int getInt(){
+//        return s.nextInt();
+//    }
     public int getInt(){
-        return s.nextInt();
+    try{ String a = getString();
+        return Integer.valueOf(a);
     }
+    catch(NumberFormatException e){
+        System.out.println("something went wrong" + e.getMessage());
+        System.out.println("Here is some more detail:");
+        e.printStackTrace();
+        return getInt();
+        }
+
+    }
+
     public double getDouble(double min, double max){
         double userInt = s.nextInt();
         if(userInt >= min && userInt <= max){
@@ -42,8 +55,20 @@ public class Input {
             return getDouble(min, max);
         }
     }
-    public double getDouble(){
-        return s.nextDouble();
+//    public double getDouble(){
+//        return s.nextDouble();
+//    }
+public double getDouble(){
+    try{ String a = getString();
+        return Double.valueOf(a);
     }
+    catch(NumberFormatException e){
+        System.out.println("something went wrong" + e.getMessage());
+        System.out.println("Here is some more detail:");
+        e.printStackTrace();
+        return getDouble();
+    }
+
+}
 }
 
