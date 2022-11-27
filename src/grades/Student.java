@@ -9,7 +9,7 @@ public class Student {
 
 
 
-    public Student(String name, ArrayList<Integer> grades){
+    public Student(String name){
         this.stdName = name;
         this.grades = new ArrayList<>();
     }
@@ -18,10 +18,12 @@ public class Student {
     public String getName(){
        return this.stdName;
     };
+
+
     // adds the given grade to the grades property
     public void addGrade(int grade){
         grades.add(grade);
-    };
+    }
     // returns the average of the students grades
     public double getGradeAverage(){
         double sum = 0;

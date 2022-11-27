@@ -29,46 +29,46 @@ public class Input {
             return getInt(min, max);
         }
     }
-//    public int getInt(){
-//        return s.nextInt();
-//    }
     public int getInt(){
-    try{ String a = getString();
-        return Integer.valueOf(a);
+        return s.nextInt();
     }
-    catch(NumberFormatException e){
-        System.out.println("something went wrong" + e.getMessage());
-        System.out.println("Here is some more detail:");
-        e.printStackTrace();
-        return getInt();
-        }
+//    public int getInt(){
+//    try{ String a = getString();
+//        return Integer.valueOf(a);
+//    }
+//    catch(NumberFormatException e){
+//        System.out.println("something went wrong" + e.getMessage());
+//        System.out.println("Here is some more detail:");
+//        e.printStackTrace();
+//        return getInt();
+//        }
 
-    }
+//    }
 
     public double getDouble(double min, double max){
-        double userInt = s.nextInt();
+        double userInt = s.nextDouble();
         if(userInt >= min && userInt <= max){
             return userInt;
         }else{
-            System.out.println("Enter a valid integer between " + min + "and"
+            System.out.println("Enter a valid double value between " + min + "and"
                     + max);
             return getDouble(min, max);
         }
     }
-//    public double getDouble(){
-//        return s.nextDouble();
+    public double getDouble(){
+        return s.nextDouble();
+    }
+//public double getDouble(){
+//    try{ String a = getString();
+//        return Double.valueOf(a);
 //    }
-public double getDouble(){
-    try{ String a = getString();
-        return Double.valueOf(a);
-    }
-    catch(NumberFormatException e){
-        System.out.println("something went wrong" + e.getMessage());
-        System.out.println("Here is some more detail:");
-        e.printStackTrace();
-        return getDouble();
-    }
-
-}
+//    catch(NumberFormatException e){
+//        System.out.println("something went wrong" + e.getMessage());
+//        System.out.println("Here is some more detail:");
+//        e.printStackTrace();
+//        return getDouble();
+//    }
+//
+//}
 }
 

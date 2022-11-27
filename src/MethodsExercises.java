@@ -8,8 +8,9 @@ public class MethodsExercises {
 //        multiplication(6, 7);
 //        division(9, 3);
 //        modulus(11, 4);
-        getInteger(5, 9);
-        factorial();
+//        getInteger(5, 9);
+//        factorial();
+        diceRoll();
     }
 
     public static void addition(double x, double y) {
@@ -108,17 +109,13 @@ public class MethodsExercises {
     public static void diceRoll(){
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the number of sides of a pair of dice: ");
-        int sides = s.nextInt();
+        int sideNum = s.nextInt();
         System.out.println("Ready to roll the dice? Y or N: ");
         String userChoice = s.next();
-//        If (userChoice.equalsIgnoreCase("y")){
-//            System.out.println("die 1:" + (int)Math.floor(Math.random() * sides) +1);
-//            System.out.println("die 2:" + (int)Math.floor(Math.random() * sides) +1);
-//        }
-
-
-
-
+        if (userChoice.equalsIgnoreCase("y")){
+            System.out.println("die 1: " + (int)Math.floor(Math.random() * sideNum + 1));
+            System.out.println("die 2: " + (int)Math.floor(Math.random() * sideNum + 1));
+        }
     }
 }
 
