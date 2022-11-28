@@ -53,16 +53,21 @@ public class GradesApplication {
             for (String student: students.keySet()){
                 System.out.print("|" + student + "| ");
             }
-            System.out.println("\n\nWhat student would you like to see more information on?");
-            String input = a.getString();
-                if (students.containsKey(input)) {
-                    System.out.println("Name: " + students.get(input).getName() + " - "
-                            + "Github Username: " + input + " Current Average: " + students.get(input).getGradeAverage()
-                    + " Grades: " + students.get(input).grades);
-                } else {
-                    System.out.printf("Sorry, no student found with the Github username of %s\n", input);
-                }
-
+//            System.out.println("\n\nWhat student would you like to see more information on?");
+//            String input = a.getString();
+//                if (students.containsKey(input)) {
+//                    System.out.println("Name: " + students.get(input).getName() + " - "
+//                            + "Github Username: " + input + " Current Average: " + students.get(input).getGradeAverage()
+//                    + " Grades: " + students.get(input).grades);
+//                } else {
+//                    System.out.printf("Sorry, no student found with the Github username of %s\n", input);
+//                }
+            System.out.println("\nCSV report of all students:\n" +
+                    "\nname,github_username, average:\n");
+            for (Map.Entry<String, Student> student : students.entrySet()) {
+                System.out.println(student.getValue().getName() + "," +
+                        student.getKey() + "," + student.getValue().getGradeAverage());
+            }
             System.out.println("\n Would you like to see another student? Y/N");
             choice = a.getString();
         } while (choice.equalsIgnoreCase("y"));
