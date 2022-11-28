@@ -36,8 +36,6 @@ public class GradesApplication {
         four.addGrade(97);
         four.addGrade(91);
 
-//        Map<String, Student> students = new HashMap<String, Student>();
-
         students.put("Andres4", one);
         students.put("Ethan5", two);
         students.put("Jeffrey6", three);
@@ -46,41 +44,30 @@ public class GradesApplication {
 
         System.out.println("Welcome!\n" + "\n" + "Here are the GitHub usernames of our Students:\n");
 
-        for (Map.Entry<String, Student> student : students.entrySet()) {
-            System.out.print("|" + student.getKey() + "|  ");
-        }
-        System.out.println("\n\nWhat student would you like to see more information on?");
-//        boolean run = true;
-//        while (run) {
-            Input a = new Input();
-            String input = a.getString();
-//            if (input.equals(students.keySet())) {
-                for (Map.Entry<String, Student> set : students.entrySet()) {
-                    if (input.equalsIgnoreCase(set.getKey())) {
-                        System.out.println("Name: " + set.getValue().getName() + " - "
-                                + "Github Username: " + set.getKey() +
-                                "\n" + "Current Average: " + set.getValue().getGradeAverage());
-                    }
 
-//                        System.out.println("\n Would you like to see another student? Y/N");
-//                    } else if (input.equalsIgnoreCase("n")) {
-//                        System.out.println("Thank you and Have a wonderful day!");
-//                        break;
-//                    }
-                    else{
-                        System.out.printf("Sorry, no student found with the Github username of %s" + "\n" +
-                                "Would you like to see another student?", input);
-                        break;
-                    }
-//
-//                }
-
-
+        Input a = new Input();
+        String choice;
+        do {
+//            for (Map.Entry<String, Student> student : students.entrySet()) {
+//                System.out.print("|" + student.getKey() + "|  ");
+//            }
+            for (String student: students.keySet()){
+                System.out.print("|" + student + "| ");
             }
+            System.out.println("\n\nWhat student would you like to see more information on?");
+            String input = a.getString();
+                if (students.containsKey(input)) {
+                    System.out.println("Name: " + students.get(input).getName() + " - "
+                            + "Github Username: " + input + " Current Average: " + students.get(input).getGradeAverage());
+                } else {
+                    System.out.printf("Sorry, no student found with the Github username of %s\n", input);
+                }
 
-        }
+            System.out.println("\n Would you like to see another student? Y/N");
+            choice = a.getString();
+        } while (choice.equalsIgnoreCase("y"));
+        System.out.println("Thank you and Have a wonderful day!");
     }
-
-//}
+}
 
 
