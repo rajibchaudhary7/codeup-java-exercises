@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class Student {
     private String stdName;
-    private ArrayList<Integer> grades;
+//    private ArrayList<Integer> grades;
+    protected ArrayList<Integer> grades;
     public double average;
 
 

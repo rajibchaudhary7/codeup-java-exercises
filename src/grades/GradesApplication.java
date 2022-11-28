@@ -44,7 +44,6 @@ public class GradesApplication {
 
         System.out.println("Welcome!\n" + "\n" + "Here are the GitHub usernames of our Students:\n");
 
-
         Input a = new Input();
         String choice;
         do {
@@ -58,7 +57,8 @@ public class GradesApplication {
             String input = a.getString();
                 if (students.containsKey(input)) {
                     System.out.println("Name: " + students.get(input).getName() + " - "
-                            + "Github Username: " + input + " Current Average: " + students.get(input).getGradeAverage());
+                            + "Github Username: " + input + " Current Average: " + students.get(input).getGradeAverage()
+                    + " Grades: " + students.get(input).grades);
                 } else {
                     System.out.printf("Sorry, no student found with the Github username of %s\n", input);
                 }
