@@ -30,7 +30,9 @@ public class Input {
         }
     }
     public int getInt(){
-        return s.nextInt();
+        int x = s.nextInt();
+        s.nextLine();
+        return x;
     }
 //    public int getInt(){
 //    try{ String a = getString();

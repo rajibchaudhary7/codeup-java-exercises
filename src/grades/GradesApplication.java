@@ -40,7 +40,7 @@ public class GradesApplication {
         students.put("Ethan5", two);
         students.put("Jeffrey6", three);
         students.put("Isaiah7", four);
-        System.out.println("\n" + students.keySet() + "\n");
+        System.out.println("\n" + students + "\n");
 
         System.out.println("Welcome!\n" + "\n" + "Here are the GitHub usernames of our Students:\n");
 
@@ -68,8 +68,7 @@ public class GradesApplication {
                         System.out.println(student.getValue().getName() + "," +
                                 student.getKey() + "," + student.getValue().getGradeAverage());
                     }
-                }
-            else {
+                } else {
                     System.out.printf("Sorry, no student found with the Github username of %s\n", input);
                 }
 

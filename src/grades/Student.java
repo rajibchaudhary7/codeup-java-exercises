@@ -6,7 +6,7 @@ public class Student {
     private String stdName;
 //    private ArrayList<Integer> grades;
     protected ArrayList<Integer> grades;
-    public double average;
+
 
 
 
@@ -25,6 +25,7 @@ public class Student {
     public void addGrade(int grade){
         grades.add(grade);
     }
+
     // returns the average of the students grades
     public double getGradeAverage(){
         double sum = 0;
